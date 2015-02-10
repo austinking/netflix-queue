@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 var storage = require('./lib/storage');
 
-
 console.log(process.argv);
 
-//storage.saveJSON(JSON.stringify({hello: 'world'}), function(err, a) {
+storage.saveJSON({hello: 'world'}, function(err) {
   storage.loadJSON(function(err, obj) {
-    console.log(arguments);
+    if (err) {
+        console.error(err);
+    } else {
+        console.log(obj);    
+    }
   });
-//});
-
+});
