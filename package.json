@@ -1,0 +1,19 @@
+{
+  "name": "netflix_queue",
+  "version": "0.0.0",
+  "description": "A Code Kata similar to the netflix queue",
+  "main": "netflix.js",
+  "scripts": {
+    "test": "mocha --reporter=nyan",
+    "watch": "mocha -w --reporter=nyan"
+  },
+  "keywords": [
+    "Code",
+    "Kata"
+  ],
+  "devDependencies": {
+    "mocha": "2.1.0"
+  },
+  "author": "Porch Hackers<kiosk@porch.com>",
+  "license": "BSD"
+}
